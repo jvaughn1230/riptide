@@ -1,12 +1,16 @@
+import {Routes, Route} from 'react-router-dom'
+import Home from './Routes/Home';
+
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
+import Navigation from './Routes/Navigation';
+
 function App() {
   return (
-    <div className="App">
-      <h1>RipTide</h1>
-      <h3>A Bug tracking App</h3>
-      <Navbar />
-    </div>
+    <Routes>
+      <Route path='/' element={<Navigation />}>
+        <Route index element={<Home />} />
+      </Route>
+    </Routes>
   );
 }
 
