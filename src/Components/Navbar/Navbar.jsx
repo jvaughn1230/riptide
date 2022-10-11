@@ -8,6 +8,7 @@ const newNavbarItem = (newItem) => {
     key={newItem.id}
     icon={newItem.icon}
     title={newItem.title}
+    link={newItem.link}
   />
 }
 
