@@ -14,5 +14,11 @@ export const NavbarData = [
         icon: <BarChartIcon />,
         link: "/data"
     },
+    {
+        id: 3,
+        title:"Add Bug",
+        icon:<BarChartIcon />,
+        link: "/addBug"
+    },
     
 ];

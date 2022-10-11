@@ -1,10 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavBarItem = (props) => {
+  console.log("Working" + props)
   return (
-    <li onClick={()=>{window.location.pathname = props.link}} className="navbarRow">
+    <li className="navbarRow">
         <div className="navbarIcon">{props.icon}</div>
-        <div className='navbarTitle'>{props.title}</div>
+        <Link to={`${props.link}`} className='navbarTitle'>{props.title}</Link>
     </li>
   )
 }
