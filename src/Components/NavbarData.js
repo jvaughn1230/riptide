@@ -1,5 +1,6 @@
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import BarChartIcon from '@mui/icons-material/BarChart';
+import BugReportIcon from '@mui/icons-material/BugReport';
 
 export const NavbarData = [
     {
@@ -17,7 +18,7 @@ export const NavbarData = [
     {
         id: 3,
         title:"Add Bug",
-        icon:<BarChartIcon />,
+        icon:<BugReportIcon />,
         link: "/addBug"
     },
     
